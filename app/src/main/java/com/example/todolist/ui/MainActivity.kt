@@ -38,8 +38,7 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun TodoScreen(modifier: Modifier = Modifier, todoViewModel: TodoViewModel = viewModel()) {
-    // Get the todos from the ViewModel and pass them to TodoList
+fun TodoScreen(todoViewModel: TodoViewModel = viewModel()) {
     TodoList(todos = todoViewModel.todos)
 }
 
